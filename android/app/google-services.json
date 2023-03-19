@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "858633588555",
+    "project_id": "onenote-701ac",
+    "storage_bucket": "onenote-701ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858633588555:android:e3c3a5c45e39f0ec2b22ce",
+        "android_client_info": {
+          "package_name": "com.example.onenotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858633588555-uj8nej8kjs3oaoldf60c6jvpd51qe31h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.onenotes",
+            "certificate_hash": "df36591537791bc5673a79dea0dc8e436c26ed41"
+          }
+        },
+        {
+          "client_id": "858633588555-tua1b80h31lg8h9ua8io003to4i3c27t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBw0S3OP74kmh5n2X5RmBDqlrYkxtxAEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858633588555-tua1b80h31lg8h9ua8io003to4i3c27t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
