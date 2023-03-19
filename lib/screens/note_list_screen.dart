@@ -22,6 +22,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
     });
   }
 
+  //add note
   void _addNote() {
     Navigator.push(
       context,
@@ -41,6 +42,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
     });
   }
 
+  //edit or update
   void _editNote(Note note) {
     Navigator.push(
       context,
@@ -56,6 +58,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
     });
   }
 
+  //delete note
   void _deleteNoteById(String id) {
     _noteService.deleteNoteById(id).then((_) {
       setState(() {
