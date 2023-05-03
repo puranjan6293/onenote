@@ -2,15 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:onenotes/model/note.dart';
 import 'package:onenotes/screens/note_edit_screen.dart';
 import 'package:onenotes/services/note_service.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NoteListScreen extends StatefulWidget {
+  const NoteListScreen({super.key});
+
   @override
   _NoteListScreenState createState() => _NoteListScreenState();
 }
 
 class _NoteListScreenState extends State<NoteListScreen> {
   List<Note> _notes = [];
-  NoteService _noteService = NoteService();
+  final NoteService _noteService = NoteService();
 
   @override
   void initState() {
@@ -71,15 +74,26 @@ class _NoteListScreenState extends State<NoteListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Notes'),
+        elevation: 0,
+        title: Text(
+          'Contacts',
+          style: GoogleFonts.pacifico(),
+        ),
+        backgroundColor: Colors.black,
       ),
       body: ListView.builder(
         itemCount: _notes.length,
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-              title: Text(_notes[index].title),
-              subtitle: Text(_notes[index].body),
+              title: Text(
+                _notes[index].title,
+                style: GoogleFonts.poppins(),
+              ),
+              subtitle: Text(
+                _notes[index].body,
+                style: GoogleFonts.firaSans(),
+              ),
               onTap: () {
                 _editNote(_notes[index]);
               },
